@@ -26,7 +26,7 @@
         <!-- Core Versions -->
         <massiveJavaVersion>17</massiveJavaVersion>
         <!-- Maven - As of writing the version bundled with latest IntelliJ. -->
-        <massiveMavenVersion>3.8.6</massiveMavenVersion>
+        <massiveMavenVersion>3.8.4</massiveMavenVersion>
 
         <!-- Maven Plugin Properties -->
         <massiveMavenEnforcerPluginVersion>3.1.0</massiveMavenEnforcerPluginVersion>

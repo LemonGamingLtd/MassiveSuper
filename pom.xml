@@ -2,9 +2,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Basics -->
-    <groupId>com.massivecraft.massivesuper</groupId>
+    <groupId>ltd.lemongaming.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>3.4.0</version>
+    <version>3.4.1</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -29,7 +29,6 @@
         <massiveMavenVersion>3.8.4</massiveMavenVersion>
 
         <!-- Maven Plugin Properties -->
-        <massiveMavenEnforcerPluginVersion>3.1.0</massiveMavenEnforcerPluginVersion>
         <massiveMavenCompilerPluginVersion>3.10.1</massiveMavenCompilerPluginVersion>
         <massiveMavenJarPluginVersion>3.3.0</massiveMavenJarPluginVersion>
         <massiveMavenShadePluginVersion>3.4.1</massiveMavenShadePluginVersion>
@@ -146,11 +145,6 @@
 
         <!-- Plugins -->
         <plugins>
-            <!-- Enforcer -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-            </plugin>
             <!-- Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -162,30 +156,6 @@
         <pluginManagement>
             <!-- Plugins -->
             <plugins>
-                <!-- Enforcer -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>${massiveMavenEnforcerPluginVersion}</version>
-                    <executions>
-                        <execution>
-                            <id>enforce-versions</id>
-                            <goals>
-                                <goal>enforce</goal>
-                            </goals>
-                            <configuration>
-                                <rules>
-                                    <requireMavenVersion>
-                                        <version>${massiveMavenVersion}</version>
-                                    </requireMavenVersion>
-                                    <requireJavaVersion>
-                                        <version>${massiveJavaVersion}</version>
-                                    </requireJavaVersion>
-                                </rules>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
                 <!-- Compiler -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

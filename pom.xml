@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>com.massivecraft.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>3.3.3</version>
+    <version>3.4.0</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -24,48 +24,48 @@
         <massiveDescriptionSuffix></massiveDescriptionSuffix>
 
         <!-- Core Versions -->
-        <massiveJavaVersion>1.8</massiveJavaVersion>
+        <massiveJavaVersion>17</massiveJavaVersion>
         <!-- Maven - As of writing the version bundled with latest IntelliJ. -->
-        <massiveMavenVersion>3.6.0</massiveMavenVersion>
+        <massiveMavenVersion>3.8.6</massiveMavenVersion>
 
         <!-- Maven Plugin Properties -->
-        <massiveMavenEnforcerPluginVersion>3.0.0-M2</massiveMavenEnforcerPluginVersion>
-        <massiveMavenCompilerPluginVersion>3.8.0</massiveMavenCompilerPluginVersion>
-        <massiveMavenJarPluginVersion>3.1.1</massiveMavenJarPluginVersion>
-        <massiveMavenShadePluginVersion>3.2.1</massiveMavenShadePluginVersion>
-        <massiveMavenProGuardPluginVersion>2.0.14</massiveMavenProGuardPluginVersion>
+        <massiveMavenEnforcerPluginVersion>3.1.0</massiveMavenEnforcerPluginVersion>
+        <massiveMavenCompilerPluginVersion>3.10.1</massiveMavenCompilerPluginVersion>
+        <massiveMavenJarPluginVersion>3.3.0</massiveMavenJarPluginVersion>
+        <massiveMavenShadePluginVersion>3.4.1</massiveMavenShadePluginVersion>
+        <massiveMavenProGuardPluginVersion>2.6.0</massiveMavenProGuardPluginVersion>
         <massiveMavenProGuardVersion>5.3.3</massiveMavenProGuardVersion>
 
         <!-- ~~~~~~~~~~~~~~~~~ -->
         <!-- External Versions -->
         <!-- ~~~~~~~~~~~~~~~~~ -->
-        <massiveGuavaVersion>23.5-jre</massiveGuavaVersion>
-        <massiveGsonVersion>2.8.2</massiveGsonVersion>
-        <massiveMongoDBVersion>2.12.3</massiveMongoDBVersion>
+        <massiveGuavaVersion>31.1-jre</massiveGuavaVersion>
+        <massiveGsonVersion>2.10</massiveGsonVersion>
+        <massiveMongoDBVersion>3.12.11</massiveMongoDBVersion>
 
         <massiveJavassistVersion>3.21.0-GA</massiveJavassistVersion>
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.16.4-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.16.4-R0.1-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.19.2-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.19.2-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
-        <massiveVaultVersion>1.5.6</massiveVaultVersion>
+        <massiveVaultVersion>1.7</massiveVaultVersion>
 
         <!-- https://github.com/lucko/commodore -->
-        <massiveCommodoreVersion>1.2</massiveCommodoreVersion>
+        <massiveCommodoreVersion>2.3-SNAPSHOT</massiveCommodoreVersion>
 
-        <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
-        <!-- The artifact in their repository was not properly shaded -->
-        <!-- The solution for now is to download and install manually -->
-        <massiveWorldEditVersion>7.0.1</massiveWorldEditVersion>
+        <!-- https://intellectualsites.github.io/fastasyncworldedit-documentation/api/api-usage.html -->
+        <massiveFastAsyncWorldEditVersion>2.4.8</massiveFastAsyncWorldEditVersion>
+        <massiveBomType>bom-newest</massiveBomType>
+        <massiveBomVersion>1.17</massiveBomVersion>
 
-        <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
-        <massiveWorldGuardVersion>7.0.4</massiveWorldGuardVersion>
+        <!-- https://maven.enginehub.org/repo/com/sk89q/worldguard/worldguard-bukkit/ -->
+        <massiveWorldGuardVersion>7.0.8</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
-        <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
+        <massiveProtocolLibVersion>4.8.0</massiveProtocolLibVersion>
 
         <!-- http://repo.howaner.de/com/vexsoftware/votifier/ -->
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
@@ -74,14 +74,14 @@
         <massiveMineverseChatVersion>2.20.2</massiveMineverseChatVersion>
 
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
-        <massiveDynmapVersion>3.1-beta5</massiveDynmapVersion>
+        <massiveDynmapVersion>3.2.1</massiveDynmapVersion>
 
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
         <!-- ~~~~~~~~~~~~~~~ -->
 
         <!-- https://www.spigotmc.org/resources/mcmmo.2445/ -->
-        <massiveMcmmoVersion>1.5.10</massiveMcmmoVersion>
+        <massiveMcmmoVersion>1.6.5</massiveMcmmoVersion>
 
         <!-- https://www.spigotmc.org/resources/wgregionevents-continued.15946/ -->
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
@@ -95,20 +95,20 @@
 
     <!-- Repositories -->
     <repositories>
+        <!-- Paper API -->
+        <repository>
+            <id>papermc-repo</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
         <!-- Spigot API -->
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
-        <!-- Paper API -->
-        <repository>
-            <id>destroystokyo-repo</id>
-            <url>https://repo.destroystokyo.com/repository/maven-snapshots/</url>
-        </repository>
         <!-- Vault-->
         <repository>
             <id>vault-repo</id>
-            <url>http://nexus.hc.to/content/repositories/pub_releases</url>
+            <url>https://nexus.hc.to/content/repositories/pub_releases</url>
         </repository>
         <!-- WorldEdit and WorldGuard -->
         <repository>
@@ -118,12 +118,12 @@
         <!-- ProtocolLib -->
         <repository>
             <id>dmulloy2-repo</id>
-            <url>http://repo.dmulloy2.net/nexus/repository/public/</url>
+            <url>https://repo.dmulloy2.net/repository/public/</url>
         </repository>
         <!-- Votifier -->
         <repository>
             <id>howaner-repo</id>
-            <url>http://repo.howaner.de/</url>
+            <url>https://repo.howaner.de/</url>
         </repository>
         <!-- Commodore/Brigadier
         <repository>
@@ -133,7 +133,7 @@
         <!-- PlaceholderAPI -->
         <repository>
             <id>placeholderapi</id>
-            <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
     </repositories>
 
@@ -299,19 +299,39 @@
                 Intall: mvn install:install-file -DgroupId=com.sk89q.worldedit -DartifactId=worldedit-bukkit -Dversion=7.0.1 -Dpackaging=jar -Dfile=worldedit-bukkit-7.0.1.jar
                 Test: mvn dependency:get -Dartifact=com.sk89q.worldedit:worldedit-bukkit:7.0.1
             -->
-            <dependency>
+            <!--<dependency>
                 <groupId>com.sk89q.worldedit</groupId>
                 <artifactId>worldedit-core</artifactId>
                 <version>${massiveWorldEditVersion}</version>
                 <scope>provided</scope>
+            </dependency>-->
+
+            <dependency>
+                <groupId>com.intellectualsites.bom</groupId>
+                <artifactId>${massiveBomType}</artifactId>
+                <version>${massiveBomVersion}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
 
             <dependency>
-                <groupId>com.sk89q.worldedit</groupId>
-                <artifactId>worldedit-bukkit</artifactId>
-                <version>${massiveWorldEditVersion}</version>
+                <groupId>com.fastasyncworldedit</groupId>
+                <artifactId>FastAsyncWorldEdit-Core</artifactId>
                 <scope>provided</scope>
             </dependency>
+
+            <dependency>
+                <groupId>com.fastasyncworldedit</groupId>
+                <artifactId>FastAsyncWorldEdit-Bukkit</artifactId>
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>FastAsyncWorldEdit-Core</artifactId>
+                        <groupId>*</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
             <!--
                 Page: https://dev.bukkit.org/projects/worldguard/files
                 Intall: mvn install:install-file -DgroupId=com.sk89q.worldguard -DartifactId=worldguard-core -Dversion=7.0.2 -Dpackaging=jar -Dfile=worldguard-bukkit-7.0.2.jar

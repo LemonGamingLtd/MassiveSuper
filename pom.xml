@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>ltd.lemongaming.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>3.4.2</version>
+    <version>3.4.3</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -34,6 +34,7 @@
         <massiveMavenShadePluginVersion>3.4.1</massiveMavenShadePluginVersion>
         <massiveMavenProGuardPluginVersion>2.6.0</massiveMavenProGuardPluginVersion>
         <massiveMavenProGuardVersion>5.3.3</massiveMavenProGuardVersion>
+        <massiveGitCommitPluginVersion>4.9.10</massiveGitCommitPluginVersion>
 
         <!-- ~~~~~~~~~~~~~~~~~ -->
         <!-- External Versions -->
@@ -202,6 +203,24 @@
                                 <scope>runtime</scope>
                             </dependency>
                         </dependencies>
+                    </configuration>
+                </plugin>
+                <!-- Git version -->
+                <plugin>
+                    <groupId>pl.project13.maven</groupId>
+                    <artifactId>git-commit-id-plugin</artifactId>
+                    <version>${massiveGitCommitPluginVersion}</version>
+                    <executions>
+                        <execution>
+                            <id>get-the-git-info</id>
+                            <goals>
+                                <goal>revision</goal>
+                            </goals>
+                            <phase>validate</phase>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
                     </configuration>
                 </plugin>
             </plugins>

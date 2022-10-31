@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>ltd.lemongaming.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>3.4.3</version>
+    <version>3.4.4</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -34,7 +34,7 @@
         <massiveMavenShadePluginVersion>3.4.1</massiveMavenShadePluginVersion>
         <massiveMavenProGuardPluginVersion>2.6.0</massiveMavenProGuardPluginVersion>
         <massiveMavenProGuardVersion>5.3.3</massiveMavenProGuardVersion>
-        <massiveGitCommitPluginVersion>4.9.10</massiveGitCommitPluginVersion>
+        <massiveGitCommitPluginVersion>4.0.0</massiveGitCommitPluginVersion>
 
         <!-- ~~~~~~~~~~~~~~~~~ -->
         <!-- External Versions -->

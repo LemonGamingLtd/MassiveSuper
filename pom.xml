@@ -24,14 +24,14 @@
         <massiveDescriptionSuffix></massiveDescriptionSuffix>
 
         <!-- Core Versions -->
-        <massiveJavaVersion>17</massiveJavaVersion>
+        <massiveJavaVersion>21</massiveJavaVersion>
         <!-- Maven - As of writing the version bundled with latest IntelliJ. -->
         <massiveMavenVersion>3.8.4</massiveMavenVersion>
 
         <!-- Maven Plugin Properties -->
-        <massiveMavenCompilerPluginVersion>3.10.1</massiveMavenCompilerPluginVersion>
-        <massiveMavenJarPluginVersion>3.3.0</massiveMavenJarPluginVersion>
-        <massiveMavenShadePluginVersion>3.4.1</massiveMavenShadePluginVersion>
+        <massiveMavenCompilerPluginVersion>3.13.0</massiveMavenCompilerPluginVersion>
+        <massiveMavenJarPluginVersion>3.4.1</massiveMavenJarPluginVersion>
+        <massiveMavenShadePluginVersion>3.6.0</massiveMavenShadePluginVersion>
         <massiveMavenProGuardPluginVersion>2.6.0</massiveMavenProGuardPluginVersion>
         <massiveMavenProGuardVersion>5.3.3</massiveMavenProGuardVersion>
         <massiveGitCommitPluginVersion>4.0.0</massiveGitCommitPluginVersion>
@@ -47,8 +47,8 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.19.2-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.19.2-R0.1-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.21.1-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.21.1-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.7</massiveVaultVersion>
